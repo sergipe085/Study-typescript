@@ -1,5 +1,8 @@
 import { Request, Response } from 'express';
+import createUser from './services/CreateUser'
 
 export function a(req: Request, res: Response) {
-  return res.json({ message: 'ueslei jei' });
+  const user = createUser({email: 'dapscreed@gmail.com', password: 'coxinha2004'});
+
+  return res.json(user);
 }
