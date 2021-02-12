@@ -6,7 +6,7 @@ export function a(req: Request, res: Response) {
     'Pao',
     'Melancia',
     'Maca',
-    { nome: 'Banana', data: '14/10/2021' }
+    { nome: 'Banana', dataDeValidade: '15/11/2021' },
   ]});
 
   return res.json(user);

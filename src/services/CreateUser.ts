@@ -1,8 +1,13 @@
+interface Fruta {
+  nome: string,
+  dataDeValidade: string,
+}
+
 interface UserData {
   name?: string,
   email: string,
   password: string,
-  techs: Array<string | object>,
+  techs: Array<string | Fruta>,
 }
 
 export default function createUser({ name, email, password }: UserData) {
